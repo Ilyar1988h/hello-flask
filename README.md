@@ -1,5 +1,5 @@
 # hello-flask
 
-I have created two VMs in Azure cloud:
-1. Master node with Jenkins installed.
-2. Slave node with pip installed.
+I have created two Ubuntu VMs in Azure cloud:
+1. Master node with Jenkins environment.
+2. Slave node with python language.
