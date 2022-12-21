@@ -1,4 +1,3 @@
-# hello-flask
 
 I have created two Ubuntu VMs in Azure cloud:
 1. Master node with Jenkins environment.
