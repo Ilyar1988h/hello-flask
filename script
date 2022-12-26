@@ -9,7 +9,7 @@ pipeline {
             }
         }
         stage('post-build') {
-           agent any
+           agent none
            steps {
               archiveArtifacts(artifacts: '*.tar.gz', onlyIfSuccessful: true)
          }
