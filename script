@@ -8,8 +8,6 @@ pipeline {
                sh 'tar -czvf hello-${BUILD_NUMBER}.tar.gz application.py requirements.txt'
             }
         }
-    }
-    stages {
         stage('Post-Build') {
             steps { 
                echo 'fghfghf'
