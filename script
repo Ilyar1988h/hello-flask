@@ -3,8 +3,8 @@ pipeline {
 
     stages {
         stage('build') {
-            steps {
-                echo "gfhgfhfgh"
+            steps { 
+               sh add-build-num.py ${BUILD_NUMBER}
             }
         }
     }
