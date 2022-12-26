@@ -11,7 +11,7 @@ pipeline {
         stage('Post-Build') {
             agent { label 'jenkins-master'}
             steps { 
-               echo 'fghfghf'
+               archiveArtifacts artifacts: '*.tar.gz', fingerprint: true
             }
          }
      }
