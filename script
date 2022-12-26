@@ -9,6 +9,7 @@ pipeline {
             }
         }
         stage('post-build') {
+           agent {label 'jenkins-master'}
            steps {
               archiveArtifacts(artifacts: '*.tar.gz', onlyIfSuccessful: true)
          }
