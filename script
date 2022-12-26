@@ -9,11 +9,9 @@ pipeline {
             }
         }
     }
-    stages {
-         stage('Post-Build') {
-            agent {label 'Jenkins-master'}
+   stage('Post-Build') {
             steps { 
-               echo 'rghfghfgh'
+              echo 'gdfgdfg'
             }
         }
     }
