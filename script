@@ -9,9 +9,10 @@ pipeline {
             }
         }
         stage('post-build') {
-           agent none
+           node('Built-In Node') {
            steps {
               archiveArtifacts(artifacts: '*.tar.gz', onlyIfSuccessful: true)
+            }
          }
       }
    }
