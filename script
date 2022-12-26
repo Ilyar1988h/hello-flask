@@ -8,11 +8,10 @@ pipeline {
                sh 'tar -czvf hello-${BUILD_NUMBER}.tar.gz application.py requirements.txt'
             }
         }
-        stage('Post-Build') {
-            agent { label 'jenkins-master'}
-            steps { 
+        post {
+           always {
                archiveArtifacts artifacts: '*.tar.gz', fingerprint: true
-            }
-         }
-     }
+           }
+        }
+    }
 }
