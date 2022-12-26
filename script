@@ -8,10 +8,10 @@ pipeline {
                 sh 'tar -czvf hello-${BUILD_NUMBER}.tar.gz application.py requirements.txt'
             }
         }
-    }
-    stage('post-build') {
-        steps {
-            archiveArtifacts(artifacts: '*.tar.gz', onlyIfSuccessful: true)
-        }
-    }
+        stage('post-build') {
+           steps {
+              archiveArtifacts(artifacts: '*.tar.gz', onlyIfSuccessful: true)
+         }
+      }
+   }
 }
