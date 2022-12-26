@@ -9,12 +9,12 @@ pipeline {
             }
         }
     }
-    agent {label 'Jenkins-master'}
-     stages {
-        stage('Post-Build') {
-            steps { 
-               echo 'rghfghfgh'
-            }
-        }
-    }
+    stages {
+       agent {label 'Jenkins-master'}
+       stage('Post-Build') {
+           steps { 
+              echo 'rghfghfgh'
+           }
+       }
+   }
 }
