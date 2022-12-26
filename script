@@ -9,10 +9,11 @@ pipeline {
             }
         }
     }
-   stage('Post-Build') {
+    stages {
+        stage('Post-Build') {
             steps { 
-              echo 'gdfgdfg'
+               echo 'fghfghf'
             }
-        }
-    }
+         }
+     }
 }
