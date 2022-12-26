@@ -1,17 +1,17 @@
 pipeline {
     agent {label 'jenkins-slave'}
-
+    
     stages {
         stage('build') {
-            steps { 
-               sh 'python3 add-build-num.py ${BUILD_NUMBER}'
-               sh 'tar -czvf hello-${BUILD_NUMBER}.tar.gz application.py requirements.txt'
+            steps {
+                sh 'python3 add-build-num.py ${BUILD_NUMBER}'
+                sh 'tar -czvf hello-${BUILD_NUMBER}.tar.gz application.py requirements.txt'
             }
         }
-        post {
-           always {
-               archiveArtifacts artifacts: '*.tar.gz', fingerprint: true
-           }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: '*.tar.gz', onlyIfSuccessful: true
         }
     }
 }
