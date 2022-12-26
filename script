@@ -10,6 +10,7 @@ pipeline {
         }
     }
     post {
+        agent {label 'jenkins-master'}
         always {
             archiveArtifacts artifacts: '*.tar.gz', onlyIfSuccessful: true
         }
