@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps { 
-               sh 'add-build-num.py' "${BUILD_NUMBER}"
+               python add-build-num.py ${BUILD_NUMBER}
             }
         }
     }
