@@ -1,5 +1,5 @@
 
-I have created two Ubuntu VMs in Azure cloud:
+I have created two Ubuntu VMs in AWS cloud:
 1. Master node with Jenkins environment.
 2. Slave node with python language.
 
