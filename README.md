@@ -1,5 +1,6 @@
 
 I have created two Ubuntu VMs in AWS cloud and added a simple Pipeline script.
+
 The VMs are:
 1. Master node with Jenkins environment.
 2. Slave node with python language and username builder.
