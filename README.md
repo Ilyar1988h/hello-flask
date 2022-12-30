@@ -1,7 +1,9 @@
 
-I have created two Ubuntu VMs in AWS cloud:
+I have created two Ubuntu VMs in AWS cloud and added a simple Pipeline script.
+The VMs are:
 1. Master node with Jenkins environment.
 2. Slave node with python language and username builder.
 
-![image](https://user-images.githubusercontent.com/121130497/208954378-57b1e0a6-1b61-4a1d-bbcf-7867aac92aa3.png)
+![Untitled](https://user-images.githubusercontent.com/121130497/210079578-25a75f39-16f0-45ed-9f5e-f87697bd5c53.png)
+
 
